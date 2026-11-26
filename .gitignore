@@ -1,0 +1,126 @@
+# ====================================================================
+# .gitignore for C# .NET 8.0 Windows Forms & SQLite (RepairTicket)
+# ====================================================================
+
+# --------------------------------------------------------------------
+# 1. .NET / C# Build & Publish Outputs
+# --------------------------------------------------------------------
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Aa]rtifacts/
+Generated\ Files/
+
+# Single-file & Trimmed publish directories
+publish/
+publish-*/
+publish_*/
+*.pubxml.user
+*.publishsettings
+
+# --------------------------------------------------------------------
+# 2. SQLite Database Files (Auto-generated at runtime)
+# --------------------------------------------------------------------
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+*.db.bak
+*.db.backup
+repair_shop.db
+
+# --------------------------------------------------------------------
+# 3. NuGet Packages & Assets
+# --------------------------------------------------------------------
+*.nupkg
+*.snupkg
+**/packages/
+!**/packages/build/
+project.lock.json
+project.assets.json
+*.nuget.props
+*.nuget.targets
+
+# --------------------------------------------------------------------
+# 4. Visual Studio / JetBrains Rider / IDE Configurations
+# --------------------------------------------------------------------
+# Visual Studio
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.userprefs
+*.pidb
+*.booproj
+*.vspscc
+*.vssscc
+
+# JetBrains Rider & ReSharper
+.idea/
+_ReSharper*/
+*.DotSettings.user
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+
+# --------------------------------------------------------------------
+# 5. Diagnostic Logs, Crash Dumps & Temp Files
+# --------------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.dmp
+*.mdmp
+*.crashdump
+*.stackdump
+*.trc
+.tmp/
+
+# --------------------------------------------------------------------
+# 6. Test & Scratch Artifacts (Image / PDF Render Previews)
+# --------------------------------------------------------------------
+test_*.png
+test_*.jpg
+test_*.bmp
+test_*.pdf
+test_measure.*
+render_test.*
+scratch/
+scratch_*/
+
+# --------------------------------------------------------------------
+# 7. Local Harness & Python Caches
+# --------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# --------------------------------------------------------------------
+# 8. Operating System Specific Files
+# --------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# Agents
+AGENTS.md
+.agents/
